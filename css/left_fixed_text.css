@@ -1,0 +1,31 @@
+/*좌측 고정 텍스트*/
+.left_text {
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: -3%;
+  display: flex;
+  transform: rotate(90deg);
+}
+
+.left_text p {
+  display: inline-block;
+  margin-right: 4px;
+  color: #fff;
+  font-size: 1vw;
+  font-style: italic;
+  font-weight: 300;
+  transition: color 180ms ease-in-out;
+}
+
+.left_text p:nth-child(1) {
+  color: #fbd41d !important;
+  font-weight: bold;
+}
+.left_text p:nth-child(2) {
+  font-weight: bold;
+}
+
+.left_text.active p {
+  color: gray;
+}

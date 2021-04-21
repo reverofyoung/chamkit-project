@@ -1,0 +1,156 @@
+/* font */
+
+body {width: 100%; height: 100%}
+body::-webkit-scrollbar {  display: none; }
+
+.gnb a{ color:grey }  
+
+#content {position: relative;  }
+
+/* ------- 컨텐츠 영역 ------- */
+#content-bg {
+    position: fixed;
+    top: 11%;
+    right: 5%;
+    z-index: -1000;
+    font-size: 80px;
+    font-weight: 900;
+    font-style: italic;
+    color: #eeeeee;
+}
+
+
+/* ------- 컨텐츠 타이틀 ------- */
+.content-title {
+    position: fixed;
+    display: inline-block;
+    top: 13%;
+    left: 4%;
+}
+
+.content-title span#main-title{
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+}
+
+.content-title span#sub-title{
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fbd41d;
+}
+
+.content-title span#sub-txt{
+    color: #7d7d7d;
+}
+
+
+/* ------- 픽스 메뉴 ------- */
+
+.fixed-menu {
+    position: fixed;
+    top:25%;
+    left: 5%;
+    width: 12%;
+    height: 60%;
+}
+
+.fixed-menu #goods-title {
+    position: relative;
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10%
+}
+
+.fixed-menu #line {
+    position: relative;
+    margin-bottom: 20%;
+    width: 100%;
+    height: 1%;
+    background-color: #fbd41d;
+}
+
+.fixed-menu .goods-list {
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+
+.fixed-menu .goods-list p {
+    margin-bottom: 10%;
+    font-size: 14px;
+    color: #7d7d7d;
+}
+
+.fixed-menu .goods-list p #goodsCheck{
+    position: absolute;
+    right: 3%;
+}
+
+.fixed-menu .goods-color {
+    display: flex;
+    position: relative;
+    width: 100%
+}
+
+.fixed-menu .goods-color div {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+    .fixed-menu .goods-color div:nth-child(1) { background-color: black;}
+    .fixed-menu .goods-color div:nth-child(2) { background-color: gray; }
+    .fixed-menu .goods-color div:nth-child(3) { background-color: pink; }
+    .fixed-menu .goods-color div:nth-child(4) { background-color: yellow; }
+    .fixed-menu .goods-color div:nth-child(5) { background-color: red;}
+    .fixed-menu .goods-color div:nth-child(6) { background-color: blue;}
+    .fixed-menu .goods-color div:nth-child(7) { text-align: center; border: 1px solid #7d7d7d;}
+
+
+   
+/* ------- 아이템 리스트 -------  */
+.item-list-wrap {
+    position: absolute;
+    left: 22%;
+    top: 200px;
+    width: 70%;
+    height: auto;
+}
+
+.item-list {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 5%;
+    height: auto;
+}
+.item-list div { width: 30%;}
+.item-list img {width: 100%}
+
+/* ------- bold name ------- */
+
+.item .bold-name {
+    width: 100%;
+    margin-top: 5%;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.item .bold-name span {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* ------- custom ------- */
+
+.item .custom {
+    margin-top: 8px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #7d7d7d;
+}
+

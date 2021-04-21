@@ -1,0 +1,176 @@
+
+html, body {width: 100%; height: 100%}
+body::-webkit-scrollbar {  display: none; }
+
+section { position: absolute; width: 100%; height: 100%;}
+
+
+/*어바웃 메인*/
+.about_main { 
+    top:0; 
+    display: flex;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -1;
+}
+
+    .about_video {
+        position: absolute;
+        width: 100%;
+    }
+
+.about_main .team {
+    position: absolute;
+    width: 50%;
+    left: 10%;
+
+
+}
+.about_main .team div {
+    margin-top: 4%;
+}
+.about_main .team div p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 3%
+}
+
+    .about_main .team h1{
+        font-size: 5vw; 
+        display: inline;
+    }
+
+    .about_main .team h1:nth-child(1) {
+        font-weight: lighter;
+        color: #fff;
+        margin-bottom: 2%;
+        margin-right: 3%;
+    }
+
+    .about_main .team h1:nth-child(2) {
+        font-weight: bold; 
+        color: #fbd41d
+    }
+
+/*어바웃 컨텐츠01*/
+.about_content01 {
+    top:100%; 
+    display: flex; 
+    align-items: center
+}
+    .about_content01 .img_box01 {
+        width: 55%; 
+        height: 60%; 
+        background-image: url("../img/about_content01.png");
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+
+    .about_content01 .keyword_box {
+        width: 45%; 
+        height: 60%; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center
+    } 
+
+    .keyword_box .keyword {  
+        display: flex; 
+        flex-direction:column; 
+        justify-content:space-between; 
+        width: 70%; 
+        height: 80%
+    }
+
+    .keyword_box h2 {
+        margin-bottom:3%; 
+        font-size: 2.8vw; 
+        font-weight: bold; 
+        color: #fbd41d  
+    }
+
+/*어바웃 컨텐츠02*/
+.about_content02 {
+    top: 200%; 
+}
+
+.about_content02 .team_name {
+    position: absolute;
+    top: 20%;
+    left: 26%; 
+    z-index: 10; 
+}
+
+.about_content02 .team_name h2 {
+    font-size: 8vw;
+    font-weight: bold; 
+    color: #fbd41d
+}
+
+    .about_content02 .team_name_story{
+        position: absolute; 
+        top:50%;
+        left: 18%;
+    } 
+
+    .about_content02 .team_name_story p {
+        font-size: 1vw; 
+        color: grey; 
+        margin-bottom: 3%
+    }
+
+    .about_content02 .img_box02 {
+        position: absolute; 
+        top:15%; 
+        right: 0;
+        bottom:15%;
+        height: 70%;
+    
+    }
+
+    .about_content02 .img_box02 img {
+        height: 100%
+    }
+
+
+/*어바웃 컨텐츠03*/
+.about_content03{
+    top: 300%; 
+}
+
+    .about_content03_img {
+        width: 100%;
+        height: 80%;
+        background-image: url("../img/about_content03.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+/*어바웃 컨텐츠04*/
+.about_content04 {
+    height: 40%;
+    top:390%; 
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+
+}
+.about_content04 .member_wrap {
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+
+.about_content04 #member {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+    
+.about_content04 #member .name {
+    font-weight: bold;
+    margin-bottom: 4%
+}

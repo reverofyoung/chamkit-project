@@ -1,0 +1,336 @@
+.section2 {
+  position: absolute;
+  top: 100vh;
+  height: 100vh;
+  background-image: url("../img/second_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.section2 .section2-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin-left: 10%;
+  width: 35%;
+  height: 20%;
+}
+
+/* ---- 메인 텍스트 ---- */
+.section2-box .section2-txt {
+  width: 100%;
+}
+
+.section2-box .section2-txt p {
+  margin-bottom: 1vw;
+  font-size: 2vw;
+  color: #fff;
+}
+
+.section2-box .section2-txt p:nth-child(2) {
+  font-weight: 900;
+}
+
+/* ---- 버튼 ---- */
+.section2-box .kit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 60px;
+  border: 2px solid #fff;
+}
+
+.section2-box .kit-btn a {
+  white-space: nowrap;
+  font-size: 1vw;
+  font-weight: 700;
+  color: #fff;
+}
+
+.section2-box .kit-btn:hover {
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.section2-box .kit-btn:hover a {
+  color: #494949;
+  transition: all 0.5s;
+}
+
+.section3 {
+  position: absolute;
+  top: 200vh;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---- 로고 슬라이드 ---- */
+.section3-box div:first-child {
+  margin-top: 70%;
+}
+.section3-box .slide_title {
+  font-size: 1vw;
+  font-weight: bold;
+  color: gray;
+}
+
+.section3-box .slide {
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  width: 100%;
+  height: 50%;
+  background-image: url("../img/slide_logo.png");
+  background-size: cover;
+  -webkit-animation: slide 50s linear infinite;
+  animation: slide 50s linear infinite;
+}
+
+@-webkit-keyframes slide {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -2956px;
+  }
+}
+
+@keyframes slide {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -2956px;
+  }
+}
+
+.section4 {
+  position: absolute;
+  top: 250vh;
+  height: 200vh;
+}
+
+.section4 .section4_title {
+  margin-left: 2.5%;
+  margin-bottom: 3%;
+}
+
+.section4 .section4_title span {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.section4 .section4_title span:nth-child(1) {
+  color: #fbd41d;
+  margin-right: 0.5%;
+}
+
+.section4 .section4_title span:nth-child(2) {
+  color: gray;
+}
+
+.section4_wrap {
+  margin-left: 2.5%;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section4_wrap img {
+  width: 100%;
+}
+
+#main_festival {
+  width: 50%;
+}
+
+#main_festival div {
+  margin-bottom: 5%;
+}
+
+#main_festival_box img {
+  margin-bottom: 4%;
+}
+
+#main_festival p {
+  display: inline;
+  font-size: 1vw;
+}
+
+#main_festival .festlval_bold {
+  font-weight: bold;
+}
+
+#main_shop {
+  width: 20%;
+}
+
+.section4_center div {
+  margin-bottom: 15%;
+}
+
+.section4_right div {
+  margin-bottom: 30%;
+}
+
+/* ------- bold name ------- */
+.bold-name {
+  width: 100%;
+  margin-top: 5%;
+  font-size: 1vw;
+  font-weight: 900;
+}
+
+.bold-name span {
+  margin-left: 2%;
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+/* ------- custom ------- */
+.custom {
+  font-size: 0.8vw;
+  font-weight: 600;
+  color: #7d7d7d;
+  background-color: aqua;
+}
+
+/* ---- footer ---- */
+
+footer {
+  position: absolute;
+  top: 260vw;
+  width: 100%;
+  height: 20vw;
+  background-color: #000;
+}
+
+/* ---- 왼쪽 영역 ---- */
+footer .left-box {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  height: 100%;
+}
+
+footer .left-box .left-section {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  width: 60%;
+  height: 80%;
+}
+
+/* --- 로고 --- */
+.left-box .left-section #footer-logo {
+  width: 45%;
+}
+
+.left-box .left-section #footer-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* --- 이메일 --- */
+.left-box .left-section .email {
+  display: flex;
+  width: 100%;
+  height: 40%;
+}
+
+.left-box .left-section .email #emailId {
+  position: relative;
+  left: 4%;
+  width: 65%;
+  height: 30%;
+  font-size: 0.8vw;
+  font-weight: 600;
+  color: #7d7d7d;
+  border: none;
+  background-color: #000;
+}
+
+.left-box .left-section .email #email-line {
+  position: absolute;
+  top: 35%;
+  left: 4%;
+  width: 55%;
+  height: 0.3%;
+  background-color: #fff;
+}
+
+.left-box .left-section .email #submit-btn {
+  position: relative;
+  width: 30%;
+  height: 40%;
+  text-align: center;
+  font-size: 1vw;
+  font-weight: 700;
+  line-height: 3vw;
+  color: #000;
+  background-color: #fff;
+}
+
+/* -- sns --- */
+.left-box .left-section .sns {
+  position: absolute;
+  top: 55%;
+  left: 4%;
+  font-size: 1.2vw;
+  font-weight: 700;
+  color: #fff;
+}
+
+.left-box .left-section .sns .sns-icon {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7%;
+  width: 30%;
+  height: 40%;
+}
+
+.left-box .left-section .sns .sns-icon img {
+  width: 25%;
+  height: 20%;
+}
+
+/* ---- 오른쪽 영역 ---- */
+footer .right-box {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 45%;
+  width: 50%;
+  height: 100%;
+}
+
+.right-box .right-section {
+  position: relative;
+  top: 15%;
+  width: 30%;
+  height: 70%;
+}
+
+.right-box .right-section p {
+  margin-top: 10%;
+  font-size: 0.7vw;
+  font-weight: 600;
+  color: #7d7d7d;
+}
+
+.right-box .right-section .right-title {
+  font-size: 1.2vw;
+  font-weight: 700;
+  color: #fff;
+}
+
+.right-box .right-section .right-title span {
+  color: #fbd41d;
+}
