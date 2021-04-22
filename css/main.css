@@ -1,4 +1,14 @@
-.section2 {
+.full-screen {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.full-screen img {
+  width: 100%;
+}
+
+.main_custom-area {
   position: absolute;
   top: 100vh;
   height: 100vh;
@@ -9,7 +19,7 @@
   align-items: center;
 }
 
-.section2 .section2-box {
+.main_custom {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,72 +29,80 @@
   height: 20%;
 }
 
-/* ---- 메인 텍스트 ---- */
-.section2-box .section2-txt {
+.main_custom-text {
   width: 100%;
 }
 
-.section2-box .section2-txt p {
-  margin-bottom: 1vw;
+.main_custom-text p {
   font-size: 2vw;
   color: #fff;
+  line-height: 1.2;
 }
 
-.section2-box .section2-txt p:nth-child(2) {
-  font-weight: 900;
+.main_custom-text span {
+  font-weight: 700;
 }
 
-/* ---- 버튼 ---- */
-.section2-box .kit-btn {
+.kit-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  height: 60px;
-  border: 2px solid #fff;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #fff;
 }
 
-.section2-box .kit-btn a {
+.kit-btn a {
   white-space: nowrap;
   font-size: 1vw;
   font-weight: 700;
   color: #fff;
 }
-
-.section2-box .kit-btn:hover {
+.kit-btn:hover {
   background-color: #fff;
   transition: all 0.5s;
 }
 
-.section2-box .kit-btn:hover a {
+.kit-btn:hover a {
   color: #494949;
   transition: all 0.5s;
 }
 
-.section3 {
+.main_slide-area {
   position: absolute;
   top: 200vh;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
 }
 
-/* ---- 로고 슬라이드 ---- */
-.section3-box div:first-child {
-  margin-top: 70%;
+.main_slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
-.section3-box .slide_title {
-  font-size: 1vw;
+
+.main_slide .main_slide-title {
+  width: 100%;
+  height: auto;
+  padding: 5vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_slide .main_slide-title p {
+  font-size: 2vw;
   font-weight: bold;
   color: gray;
 }
 
-.section3-box .slide {
+.main_slide .slide {
   position: absolute;
-  left: 0;
-  bottom: 20%;
   width: 100%;
   height: 50%;
+  bottom: 0;
+  left: 0;
   background-image: url("../img/slide_logo.png");
   background-size: cover;
   -webkit-animation: slide 50s linear infinite;
@@ -112,30 +130,26 @@
 .section4 {
   position: absolute;
   top: 250vh;
+  left: 2.5%;
   height: 200vh;
 }
 
-.section4 .section4_title {
-  margin-left: 2.5%;
+.main_festival-title {
   margin-bottom: 3%;
 }
 
-.section4 .section4_title span {
+.main_festival-title p {
   font-weight: bold;
   font-size: 2vw;
-}
-
-.section4 .section4_title span:nth-child(1) {
-  color: #fbd41d;
-  margin-right: 0.5%;
-}
-
-.section4 .section4_title span:nth-child(2) {
   color: gray;
 }
 
+.main_festival-title span {
+  color: var(--yellow);
+  margin-right: 0.5%;
+}
+
 .section4_wrap {
-  margin-left: 2.5%;
   width: 95%;
   height: 90%;
   display: flex;
@@ -171,15 +185,14 @@
   width: 20%;
 }
 
-.section4_center div {
+.main_shop-left div {
   margin-bottom: 15%;
 }
 
-.section4_right div {
+.main_shop-right div {
   margin-bottom: 30%;
 }
 
-/* ------- bold name ------- */
 .bold-name {
   width: 100%;
   margin-top: 5%;
@@ -193,25 +206,21 @@
   font-weight: 400;
 }
 
-/* ------- custom ------- */
-.custom {
-  font-size: 0.8vw;
-  font-weight: 600;
-  color: #7d7d7d;
-  background-color: aqua;
-}
-
-/* ---- footer ---- */
-
 footer {
   position: absolute;
   top: 260vw;
+  bottom: 0;
   width: 100%;
   height: 20vw;
   background-color: #000;
 }
 
 /* ---- 왼쪽 영역 ---- */
+
+footer {
+  position: absolute;
+  top: 470vh;
+}
 footer .left-box {
   position: absolute;
   left: 0;
@@ -332,5 +341,5 @@ footer .right-box {
 }
 
 .right-box .right-section .right-title span {
-  color: #fbd41d;
+  color: var(--yellow);
 }

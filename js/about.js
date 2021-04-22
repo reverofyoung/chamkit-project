@@ -1,5 +1,4 @@
 // console.log('연결');
-
 (function($){
     var lastScroll = 0;
     $(window).scroll(function(event){
@@ -15,7 +14,6 @@
             $('.left_text').removeClass('active');
           }  
          }
-
 
          if (scroll > $('.about_content01').offset().top - 60) {
           //이벤트를 적용시킬 스크롤 

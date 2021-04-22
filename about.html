@@ -1,45 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CHAMKIT</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/about.css">
 </head>
 
 <body>
-        <!------상단바------>
-        <header>
-            <div class="logo"><!--로고-->
-                <a href="index.html">
-                    <img src="img/chamkit_logo.png">
-                </a>
-            </div>
+	<header>
+		<div class="logo"><!-- 로고 -->
+			<a href="index.html">
+				<img src="img/chamkit_logo.png">
+			</a>
+		</div>
 
-            <div class="gnb"><!--어바웃, 커스텀 메뉴-->
-                <a href="index.html"><span>HOME</span></a>
-                <a href="about.html" style="color: #fbd41d"><span>ABOUT</span></a>
-                <a href="custom_main.html"><span>CUSTOM</span></a>
-                <a href="shop.html"><span>SHOP</span></a>
-            </div>
+		<div class="gnb gnb_center"><!-- 어바웃, 커스텀 메뉴 -->
+			<ul>
+				<li>
+					<a href="index.html">HOME</a>
+				</li>
+				<li>
+					<a href="about.html" style="color: #fbd41d">ABOUT</a>
+				</li>
+				<li>
+					<a href="custom_main.html">CUSTOM</a>
+				</li>
+				<li>
+					<a href="shop.html" >SHOP</a>
+				</li>
+			</ul>
+		</div>
 
-            <div class="gnb"><!--로그인, 마이키트 메뉴-->
-                <a href="#"><span>LOGIN</span></a>
-                <a href="#"><span style="color: #fbd41d">MY KIT</span></a>
-            </div>
-        </header>
-
-
-        
+		<div class="gnb gnb_right"><!-- 로그인, 마이키트 메뉴 -->
+			<ul>
+				<li>
+					<a href="#" class="login_btn">LOGIN</a>
+				</li>
+				<li>
+					<a class="yellow" href="#" style="color: #fbd41d">MY KIT</a>
+				</li>
+			</ul>
+			
+			
+		</div>
+	</header>
         <section class="about_main"> 
-            <!------ 상단 백 비디오------>
             <video autoplay loop class="about_video" muted plays-inline>
                     <source src="./video/about.mp4" type="video/mp4">
             </video>
-            <!------ 비디오 위 텍스트------>
             <div class="team">
                     <h1>TEAM</h1>
                     <h1>CHAMKIT</h1>
@@ -51,12 +62,10 @@
             </div>
         </section>
 
-         <!------ 좌측 텍스트------>
-         <div class="left_text">
+        <div class="left_text">
                 <p>CREATE</p> <p>YOURS! </p> <p>MAKE YOUR</P>
-            </div>
+        </div>
 
-        <!------ 컨텐츠 01------>
         <section class="about_content01">
             <div class="img_box01">
                 
@@ -82,7 +91,7 @@
             </div>
         </section>
 
-        <!------ 컨텐츠 02------>
+
         <section class="about_content02">
             <div class="team_name">
                 <h2>CHAMKIT</h2>
@@ -102,48 +111,40 @@
 
         </section>
 
-        <!------ 컨텐츠 03------>
+
         <section class="about_content03">
             <div class="about_content03_img">
             </div>
         </section>
 
-        <!------ 컨텐츠 04------>
         <section class="about_content04">
             <div class="member_wrap">
-                <div id="member" class="member01">
+                <div class="member member01">
                     <P class="name">LEE YUN YOUNG</P>
                     <P class="position">Director / Publisher</P>
                 </div>
 
-                <div id="member" class="member02">
+                <div class="member member02">
                     <P class="name">IM HEE JIN</P>
                     <P class="position">Designer</P>
                 </div>
 
-                <div id="member" class="member03">
+                <div class="member member03">
                     <P class="name">PARK SO HEE</P>
                     <P class="position">Designer</P>
                 </div>
 
-                <div id="member" class="member04">
+                <div class="member member04">
                     <P class="name">KIM DA YOUNG</P>
                     <P class="position">Designer</P>
                 </div>
 
-                <div id="member" class="member05">
+                <div class="member member05">
                     <P class="name">KIM JU YOUNG</P>
                     <P class="position">Publisher</P>
                 </div>
-            </div>
-               
-         </section>
-            
-            
-      
-
-    
-    
+            </div>   
+         </section>  
     <!-- jQuery 로컬 경로 파일 로드 -->
     <script src="./js/libs/jquery/jquery.min.js" type="text/javascript"></script>
     <script src="./js/about.js"  type="text/javascript"></script>

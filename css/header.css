@@ -17,44 +17,35 @@ header {
   justify-content: space-between;
 }
 
-header .logo {
-  width: 180px;
-  min-width: 150px;
-  height: 100%;
-}
-
-header .logo img {
-  width: 100%;
-}
-
-header span {
-  margin-right: 40px;
-  letter-spacing: 2px;
-  line-height: 4;
-}
-
-header a {
-  font-size: 0.7vmax;
-  font-weight: 700;
-  color: #fff;
-  transition: color 180ms ease-in-out;
-}
-
 header.active a {
   color: gray;
 }
 
-.margin_no {
-  margin-right: 5px;
+.logo {
+  width: 180px;
+  min-width: 150px;
+  height: 100%;
+}
+.logo img {
+  width: 100%;
 }
 
-.login_wrap.on {
-  position: fixed;
-  display: block;
-  top: 0;
-  right: 0;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 1);
+.gnb li {
+  display: inline-block;
+  margin-right: 40px;
+  line-height: 4;
+}
+
+.gnb a {
+  font-size: 0.7vmax;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  transition: color 180ms ease-in-out;
+}
+.gnb_right li {
+  margin-right: 20px;
+}
+.gnb li:last-child {
+  margin-right: 0;
 }

@@ -19,7 +19,7 @@
 }
 
 .left_text p:nth-child(1) {
-  color: #fbd41d !important;
+  color: var(--yellow) !important;
   font-weight: bold;
 }
 .left_text p:nth-child(2) {

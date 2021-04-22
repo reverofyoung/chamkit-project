@@ -5,7 +5,6 @@
     $(window).scroll(function(event){
          var scroll = $(window).scrollTop();
 
-
          if (scroll > $('.section3').offset().top - 60) {
           //이벤트를 적용시킬 스크롤 
              if(!$('header').hasClass('active')){
@@ -21,6 +20,7 @@
     });
 
 })(jQuery);
+
 
 const body = document.body,
       jsScroll = document.getElementsByClassName('js-scroll')[0],
@@ -39,9 +39,8 @@ function smoothScroll() {
     
     raf = requestAnimationFrame(smoothScroll)
 }
+
 smoothScroll()
-
-
   /* 첫 번째 줄 */
   $('#festival01').hover(
       function() {$(this).attr('src','./img/main4_01_hover.png')},
