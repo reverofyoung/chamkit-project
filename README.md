@@ -22,4 +22,4 @@
 
 브랜드의 아이덴티티를 엿볼 수 있는 ___'home'___, 팀 소개를 볼 수 있는 ____'about'____, 쇼핑몰 레이아웃으로 구성된 ___'shop'___ 화면을 볼 수 있다. 
 
-### [View Now!](https://to-ql.github.io/chamkit-project/)
+### [View Now!](https://reverofyoung.github.io/chamkit-project/)
