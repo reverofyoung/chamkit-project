@@ -23,7 +23,7 @@ HTML, CSS, jQuery, JavaScript
 <br />
 
 
-### [Create your KIT](https://reverofyoung.github.io/chamkit-project/)
+### [Create your KIT](https://reverofyoung.github.io/chamkit-project/)
 
 
 
